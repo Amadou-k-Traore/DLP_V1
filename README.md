@@ -1,5 +1,5 @@
 
-# Documentation Technique — Système DLP-DTA 
+# Documentation Technique — Système DLP
 
 ---
 
@@ -72,7 +72,7 @@ Utilisateur → Frontend → Backend → [DLP_MAX_WAIT=25s] → Ollama chat
 
 ---
 
-## 3. Pipeline de détection DTA (C1–C4)
+## 3. Pipeline de détection DLP (C1–C4)
 
 ### 3.1 C1 — Classification LLM (llm_filter.py)
 
@@ -521,7 +521,7 @@ SELECT * FROM user_policy WHERE username='bob'
 → Voit le blocage → retourne 403 au frontend
 ```
 
-### 14.3 Communication DTA → Ollama
+### 14.3 Communication DLP→ Ollama
 
 ```python
 # DTA appelle Ollama pour le filtre LLM (C1+C2)
