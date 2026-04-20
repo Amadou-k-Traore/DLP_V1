@@ -1,0 +1,7 @@
+psycopg[binary]
+rapidfuzz
+spacy
+httpx
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
