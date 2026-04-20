@@ -1,11 +1,11 @@
 
-# Documentation Technique — Système DLP-DTA (REED)
+# Documentation Technique — Système DLP-DTA 
 
 ---
 
 ## 1. Vue d'ensemble du projet
 
-Le système **DLP-REED** est un prototype de recherche académique implémentant un système **DLP (Data Loss Prevention)**  pour détecter et bloquer les fuites de données personnelles sensibles dans un chatbot basé sur un LLM local (Ollama).
+Le système **DLP** est un prototype de recherche académique implémentant un système **DLP (Data Loss Prevention)**  pour détecter et bloquer les fuites de données personnelles sensibles dans un chatbot basé sur un LLM local (Ollama).
 
 ### 1.1 Objectif
 
@@ -232,7 +232,7 @@ BASE_LOG = r"C:\Users\Amadou\OneDrive\Bureau\REDD-TESTE\Backend\backend_output\l
 ollama_base_url = "http://127.0.0.1:11434"
 ollama_model    = "gemma3:4b"
 log_dir         = r"C:\Users\Amadou\OneDrive\Bureau\REDD-TESTE\Backend\backend_output\logs"
-DLP_MAX_WAIT    = 25.0   # secondes — temps d'attente décision DTA
+DLP_MAX_WAIT    = 25.0   # secondes — temps d'attente décision DLA
 DLP_POLL_INTERVAL = 0.25  # secondes — fréquence de poll PostgreSQL
 ```
 
@@ -624,7 +624,7 @@ Tous les logs sont dans `Backend\backend_output\logs\` :
 | `chat_input.jsonl` | Tous les messages envoyés par les utilisateurs |
 | `media_uploads.jsonl` | Uploads d'images et fichiers audio |
 | `assistant_output.jsonl` | Réponses générées par le LLM |
-| `dta_exec.log` | Logs d'exécution du DTA en temps réel |
+| `dta_exec.log` | Logs d'exécution du DLA en temps réel |
 | `Custom_alert.log` | Alertes de sécurité Wazuh |
 | `ollama_dta_decisions.jsonl` | Décisions DLP au format JSON |
 
